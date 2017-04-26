@@ -355,6 +355,67 @@
                                                 <p>According to the data from the Annual Report on the Development of Chinese Students Studying Abroad, about 409,100 students chose to return to China after graduation from overseas universities in 2015, representing
                                                     an increase of 12.14 from the previous year.
                                                 </p>
+                                                <h3 style="text-align: center">Trend of Getting back to China after graduation</h3>
+
+                                                <div id="datavis1" style="width: 800px;height:400px;"></div>
+                                                <p style="font-style: italic; text-align: right"> Data Source: Ministry of Education of China</p>
+                                                <script>
+                                                    title = 'Comparison';
+                                                    var myChart = echarts.init(document.getElementById('datavis1'));
+
+
+                                                    option = {
+                                                        legend: {
+                                                            right: '15%',
+
+
+                                                            data: ['Go Overseas', 'Return to China']
+
+                                                        },
+
+                                                        tooltip: {
+                                                            trigger: 'axis',
+                                                            axisPointer: { // 坐标轴指示器，坐标轴触发有效
+                                                                type: 'shadow' // 默认为直线，可选为：'line' | 'shadow'
+                                                            }
+                                                        },
+                                                        grid: {
+                                                            left: '5%',
+                                                            right: '10%',
+                                                            bottom: '3%',
+                                                            top: '10%',
+                                                            containLabel: true
+                                                        },
+                                                        xAxis: [{
+                                                            type: 'category',
+                                                            data: [2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016],
+                                                            axisTick: {
+                                                                alignWithLabel: true
+                                                            }
+                                                        }],
+                                                        yAxis: [{
+                                                            type: 'value',
+                                                            name: 'Number in Thousand'
+                                                        }],
+                                                        series: [{
+                                                            name: 'Go Overseas',
+                                                            type: 'bar',
+                                                            color: ['#f2af00'],
+                                                            barWidth: '60%',
+                                                            data: [144, 179.8, 229.3, 284.7, 339.7, 399.6, 410, 459.8, 523.7, 544.5]
+                                                        }, {
+                                                            name: 'Return to China',
+                                                            color: ['#3398DB'],
+                                                            type: 'line',
+                                                            barWidth: '60%',
+                                                            data: [44, 70, 108.3, 130, 186.2, 272.9, 300, 364.8, 409.1, 432.5]
+                                                        }]
+                                                    };
+
+
+                                                    myChart.setOption(option);
+                                                </script>
+
                                                 <p>“My parents can provide me more connections and resources in job searching if I come back to mainland after graduation,” said Haoyue Xu, currently pursuing her bachelor's degree in Hong Kong Baptist University.
 
                                                 </p>
