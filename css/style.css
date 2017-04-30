@@ -118,26 +118,33 @@ img {
     background-color: transparent
 }
 
+.name {
+    background: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+    border-radius: 5px;
+}
+
 
 /* home section */
 
 #home {
-    background: url('../images/home-bg.jpg')no-repeat;
+    background: url('../images/background.jpeg')no-repeat;
     background-size: cover;
     background-position: center;
-    min-height: 600px;
+    min-height: 700px;
     padding-top: 220px;
     padding-bottom: 100px;
 }
 
 #home h1 {
-    color: #f2af00;
+    color: #dc5034;
     font-weight: 300;
     padding-bottom: 10px;
 }
 
 #home h2 {
     line-height: 10px;
+    color: #444;
 }
 
 #home .btn {
@@ -149,7 +156,7 @@ img {
     font-weight: bold;
     font-size: 16px;
     padding-top: 14px;
-    width: 200px;
+    width: 300px;
     padding: 20px;
     margin-top: 20px;
     transition: all 0.4s ease-in-out;
@@ -177,6 +184,11 @@ img {
     text-align: justify;
 }
 
+#service .col-md-12 {
+    text-align: center;
+    padding-bottom: 60px;
+}
+
 #service h2 {
     border-left: 2px solid #f2af00;
     display: inline-block;
@@ -202,7 +214,6 @@ img {
 #about {
     padding-top: 100px;
     padding-bottom: 80px;
-    text-align: justify;
 }
 
 #about h2 {
@@ -223,6 +234,10 @@ img {
 
 #about h4 {
     padding-bottom: 10px;
+}
+
+#about p {
+    text-align: justify;
 }
 
 
@@ -260,6 +275,7 @@ img {
 #portfolio {
     padding-top: 80px;
     padding-bottom: 60px;
+    text-align: justify;
 }
 
 #portfolio h2 {
@@ -270,6 +286,11 @@ img {
 
 #portfolio p {
     text-align: justify
+}
+
+#portfolio .col-md-12 {
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 
@@ -285,6 +306,11 @@ img {
     border-left: 2px solid #f2af00;
     display: inline-block;
     padding: 20px;
+}
+
+#pricing .col-md-12 {
+    text-align: center;
+    padding-bottom: 60px;
 }
 
 
